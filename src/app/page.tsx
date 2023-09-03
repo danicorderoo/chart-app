@@ -684,9 +684,11 @@ export default function Home() {
           <Confetti width={width || 425} height={height || 814} />
         )}
         <>{getMovie(movie)}</>
+        <div className={styles.button}>
         <Button variant="contained" color="secondary" onClick={changeMovie}>
           Continuar
         </Button>
+        </div>
       </main>
     </ThemeProvider>
   );

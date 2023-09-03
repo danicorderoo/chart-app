@@ -29,7 +29,15 @@
   font-size: 30px;
   color: white;
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
+  right: 0;
+  left: 4.5%;
+  margin: auto;
+}
+
+.button{
+    position: absolute;
+  bottom: 8%;
   right: 0;
   left: 4.5%;
   margin: auto;
