@@ -1,0 +1,89 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  background-image: url(../../public/b3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.back {
+  background-image: url(../../public/b5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.chart {
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+}
+
+.text {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+  left: 4.5%;
+  margin: auto;
+}
+
+.options {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  top: 30%;
+  right: 0%;
+  left: 20px;
+}
+
+.face1 {
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  top: 20px;
+  animation: movimiento, aparece;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.face2 {
+  position: absolute;
+  border-radius: 50%;
+  right: 20px;
+  top: 20px;
+  animation: movimiento, aparece;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes aparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
