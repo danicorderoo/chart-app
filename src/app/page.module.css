@@ -18,6 +18,12 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+.back2 {
+  background-image: url(../../public/bg7.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .chart {
   position: absolute;
@@ -49,7 +55,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  top: 30%;
+  top: 25%;
   right: 0%;
   left: 20px;
 }

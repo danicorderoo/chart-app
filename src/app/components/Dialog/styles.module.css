@@ -9,10 +9,12 @@
 .text {
   background-color: rgba(0, 0, 0, 0.307);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 20px;
   text-align: center;
+  margin-top: -8em;
+
 }
 
 .text p {

@@ -678,17 +678,17 @@ export default function Home() {
       <main
         className={`${styles.main} ${
           (movie === 36 || movie === 37) && styles.back
-        }`}
+        } ${movie===35 && styles.back2} `}
       >
         {(movie === 36 || movie === 37) && (
           <Confetti width={width || 425} height={height || 814} />
         )}
         <>{getMovie(movie)}</>
-        <div className={styles.button}>
+{  movie !==37&&      <div className={styles.button}>
         <Button variant="contained" color="secondary" onClick={changeMovie}>
           Continuar
         </Button>
-        </div>
+        </div>}
       </main>
     </ThemeProvider>
   );
